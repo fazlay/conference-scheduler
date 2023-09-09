@@ -1,4 +1,4 @@
-import Footer from "@/footer";
+import Footer from "@/components/Footer";
 import { Meta } from "../layout/Meta";
 import { AppConfig } from "../utils/AppConfig";
 import HighlightedSection from "@/components/HighlightedSection";

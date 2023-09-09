@@ -16,14 +16,25 @@
     font-family: Butler, system-ui, sans-serif;
   }
 } */
+.main_container{
+  max-width: 1268px;
+  margin: 0 80px;
+  overflow: hidden;
+}
+
+.footer_image_container{
+  color: #fff;
+  background-image: url('/assets/images/footer_banner_image.jpg');
+  height: 350px;
+}
 
 .social-icon-footer {
   width: 20px;
   height: 25px;
   margin: 5px;
   color: blue;
-  background-color: black;
-  padding: 20px;
+  background-color: #cbd5e0;
+  padding: 8px;
   border-radius: 60px;
 }
 

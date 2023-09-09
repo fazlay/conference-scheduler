@@ -1,15 +1,11 @@
-import BaseLayout from '@/layout/BaseLayout';
-import { ReactNode } from 'react';
-import { Base } from '../templates/Base';
+import BaseLayout from "@/layout/BaseLayout";
+import { ReactNode } from "react";
+import HomePage from "@/components/HomePage";
 
-const Index = () => <Base />;
+const Index = () => <HomePage />;
 
 Index.getLayout = (page: ReactNode) => {
-  return (
-    <BaseLayout className="flex min-h-screen flex-col bg-brand-25/50">
-      {page}
-    </BaseLayout>
-  );
+  return <BaseLayout className="main_container">{page}</BaseLayout>;
 };
 
 export default Index;

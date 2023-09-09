@@ -1,0 +1,66 @@
+.footer_ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_li {
+  padding-left: 20px; /* Add some padding to make space for the icon */
+  position: relative;
+  font-size: 0.75rem;
+  
+  margin-bottom: 5px; /* Optional: Add some spacing between list items */
+}
+
+.footer_li::before {
+  content: '\027A4'; /* Font Awesome icon code for a home icon */
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+}
+
+
+.webflow_style_input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  height: 30px;
+  color: #0000 ;
+border: none;
+  
+
+}
+
+.webflow_style_input input {
+  flex-grow: 1;
+  color: #000 ;
+  font-size: 1.0rem;
+  line-height: 1.0rem;
+  vertical-align: middle;
+  border-radius: 5px 0 0 5px;
+  height: 30px;
+  padding-left: 10px;
+  border:none;
+
+
+}
+
+.webflow_style_input input:focus {
+  outline: none;
+}
+
+.webflow_style_input button {
+ color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  vertical-align: middle;
+  transition: color .25s;
+  padding:0 8px;
+  background-color: red;
+  /* &:hover {
+    color: $input-text-active;
+  } */
+}

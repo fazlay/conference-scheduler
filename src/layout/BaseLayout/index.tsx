@@ -1,12 +1,16 @@
+import Footer from "@/components/Footer";
+import TopNavigation from "@/components/NavBar";
+import TopNoticeBar from "@/components/TopNoticeBar";
 
 const BaseLayout: React.FC<
   React.PropsWithChildren & { className?: string }
 > = ({ children, className = "" }) => {
   return (
     <div className={className}>
-    <span>HEADER</span>
+      <TopNoticeBar />
+      <TopNavigation />
       {children}
-      <span>FOOTER</span>
+      <Footer />
     </div>
   );
 };
