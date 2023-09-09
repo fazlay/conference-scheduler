@@ -1,0 +1,89 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Butler';
+  src: url('/Butler/Butler_Bold.otf') format('opentype');
+}
+
+
+/* @layer base {
+  html {
+    font-family: Butler, system-ui, sans-serif;
+  }
+} */
+
+.social-icon-footer {
+  width: 20px;
+  height: 25px;
+  margin: 5px;
+  color: blue;
+  background-color: black;
+  padding: 20px;
+  border-radius: 60px;
+}
+
+.social-icon-footer:hover {
+  color: white;
+  background-color: blue;
+}
+
+.outer-button {
+  display: inline-block;
+  padding: 5px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+  background-color: #3498db;
+  border: none; /* Remove the default button border */
+  box-shadow: 
+    0 0 0 3px #ffff, /* Outer border with color #3498db */
+    0 0 0 5px #3498db, /* Inner border with color #ff5733 */
+    0 0 0 12px transparent;  
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 100%;
+  border: 2px solid black;
+  color: red;
+  
+}
+
+
+
+
+
+
+
+
