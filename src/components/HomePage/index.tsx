@@ -10,8 +10,17 @@ import BlogSlider from "@/components/BlogSlider";
 const HomePage = () => {
   return (
     <>
-      <HeroSection />
-      <FeaturedCompany />
+      <div className="container_margin">
+        <HeroSection
+          heroTitle={"BUTNEXT"}
+          heroSubTitle={"B2b Lead Generation - Boost Your Business"}
+          heroDescription={
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+          }
+          homepage
+        />
+        <FeaturedCompany />
+      </div>
       <div className="py-8">
         <h1 className="text-4xl font-bold font-primary-heading text-left text-black ">
           How We Can Help You
@@ -22,13 +31,15 @@ const HomePage = () => {
           aliquid.
         </p>
       </div>
-      <HighlightedSection />
-      <OurClients />
+      <div className="container_margin">
+        <HighlightedSection />
+        <OurClients />
+      </div>
       <div className="py-8">
         <h1 className="text-4xl font-bold font-primary-heading text-left text-black ">
           Why Choose Us
         </h1>
-        <div className="flex flex-row gap-x-16">
+        <div className="container_margin flex flex-row gap-x-16">
           <ChooseUsCard />
           <ChooseUsCard />
           <ChooseUsCard />
@@ -39,7 +50,9 @@ const HomePage = () => {
         <h1 className="text-4xl font-bold font-primary-heading text-center text-black mb-4 ">
           Our Featured Reviews
         </h1>
-        <Slider />
+        <div className="container_margin">
+          <Slider />
+        </div>
       </div>
 
       <div className="py-8">

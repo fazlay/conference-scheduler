@@ -5,7 +5,7 @@ import HomePage from "@/components/HomePage";
 const Index = () => <HomePage />;
 
 Index.getLayout = (page: ReactNode) => {
-  return <BaseLayout className="main_container">{page}</BaseLayout>;
+  return <BaseLayout className="">{page}</BaseLayout>;
 };
 
 export default Index;

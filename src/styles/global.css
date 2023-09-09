@@ -18,8 +18,15 @@
 } */
 .main_container{
   max-width: 1268px;
-  margin: 0 80px;
+  /* margin: 0 80px; */
   overflow: hidden;
+}
+
+.container_margin{
+  margin: 0 5rem;
+}
+.container_padding{
+  margin: 0 5rem;
 }
 
 .footer_image_container{

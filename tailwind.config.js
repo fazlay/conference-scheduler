@@ -52,7 +52,7 @@ module.exports = {
     textColor: {
       primary: "#3490dc",
       secondary: "#dadada",
-      danger: "#e3342f",
+      faded_black: "#4a5568",
       heading: "#2b2b2b",
     },
   },

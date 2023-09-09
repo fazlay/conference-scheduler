@@ -7,8 +7,11 @@ const BaseLayout: React.FC<
 > = ({ children, className = "" }) => {
   return (
     <div className={className}>
-      <TopNoticeBar />
-      <TopNavigation />
+      <div className="container_margin">
+        {/* <TopNoticeBar />
+        <TopNavigation /> */}
+      </div>
+
       {children}
       <Footer />
     </div>

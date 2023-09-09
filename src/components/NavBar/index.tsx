@@ -2,7 +2,7 @@ import React from "react";
 
 const TopNavigation = () => {
   return (
-    <nav className=" flex items-center justify-between flex-wrap bg-gray-800 p-6  w-full z-10 top-0 mr-48">
+    <nav className=" container_margin flex items-center justify-between flex-wrap bg-gray-800 p-6  w-full z-10 top-0 mr-48">
       <div className="block lg:hidden">
         <button
           id="nav-toggle"
