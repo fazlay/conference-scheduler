@@ -1,0 +1,56 @@
+.container {
+  position: relative;
+  width: 33.33%;
+  height: 28rem;
+   overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  background-color: red;
+  transition: width 0.5s ease-in-out;
+  opacity: 0.1;
+}
+
+.overlay::before {
+  left: 0;
+}
+
+.overlay::after {
+  right: 0;
+}
+
+.container:hover .overlay::before,
+.container:hover .overlay::after {
+  width: 100%;
+  opacity: 0.2;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: -50px; /* Position the text below the container initially */
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slideIn 0.5s forwards; /* Apply the animation */
+}
+
+@keyframes slideIn {
+  100% {
+    bottom: 10px; /* Position the text at desired location */
+  }
+}

@@ -49,6 +49,9 @@
   color: white;
   background-color: blue;
 }
+.height_500{
+  height: 30rem;
+}
 
 .outer-button {
   display: inline-block;

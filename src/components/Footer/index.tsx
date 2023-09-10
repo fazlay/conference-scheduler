@@ -23,109 +23,114 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-background-footer text-secondary">
-        <div className=" flex w-full  gap-16">
-          <div className="left-section flex-2 w-1/2">
-            <div className="brand-icon p-2 mt-4">
-              <FontAwesomeIcon icon={faFacebook} style={{ color: "#1860dc" }} />
-            </div>
-            <p className="text-xs text-slate">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-              iure earum omnis deserunt fugit cum rem nostrum? Blanditiis, quam
-              ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Dolore iure earum omnis deserunt fugit cum rem nostrum?
-              Blanditiis, quam ullam.
-            </p>
-
-            <div className="social-icons py-8">
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="social-icon-footer "
-              />
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="social-icon-footer "
-              />
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="social-icon-footer "
-              />
-              <FontAwesomeIcon
-                icon={faFacebook}
-                className="social-icon-footer "
-              />
-            </div>
-          </div>
-          <div className="middle-section flx-1 pt-8">
-            <p className="text-sm font-bold text-white pb-4">Useful Links</p>
-            <ul className={styles.footer_ul}>
-              <li className={styles.footer_li}>Home</li>
-              <li className={styles.footer_li}>Blog</li>
-              <li className={styles.footer_li}>Home</li>
-              <li className={styles.footer_li}>Home</li>
-              <li className={styles.footer_li}>Blog</li>
-              <li className={styles.footer_li}>Home</li>
-            </ul>
-          </div>
-          <div className="right-section flex-1 pt-8">
-            <p className="text-sm font-bold text-white pb-4">
-              Subscribe to our newsletter
-            </p>
-            <div className="pr-8">
-              <div className={styles.webflow_style_input}>
-                <input
-                  // className=""
-                  type="email"
-                  placeholder="Enter your email"
-                ></input>
-                <button type="submit">
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </button>
+        <div className="div container_margin">
+          <div className=" flex w-full  gap-16">
+            <div className="left-section flex-2 w-1/2">
+              <div className="brand-icon p-2 mt-4">
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  style={{ color: "#1860dc" }}
+                />
               </div>
+              <p className="text-xs text-slate">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+                iure earum omnis deserunt fugit cum rem nostrum? Blanditiis,
+                quam ullam. Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Dolore iure earum omnis deserunt fugit cum rem nostrum?
+                Blanditiis, quam ullam.
+              </p>
 
-              <div className="contact_details pt-4">
-                <div className="first_item flex pb-2">
-                  <div className="icon flex justify-center items-center">
-                    <FontAwesomeIcon icon={faFacebook} />
-                  </div>
-                  <div className="text pl-2">
-                    <p className="text-xs text-secondary font-semibold pl-1 pb-0">
-                      {" "}
-                      24/7 Support:
-                    </p>
-                    <p className="text-xs text-secondary font-semibold ">
-                      {" "}
-                      +88017111 38456
-                    </p>
-                  </div>
+              <div className="social-icons py-8">
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="social-icon-footer "
+                />
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="social-icon-footer "
+                />
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="social-icon-footer "
+                />
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="social-icon-footer "
+                />
+              </div>
+            </div>
+            <div className="middle-section flx-1 pt-8">
+              <p className="text-sm font-bold text-white pb-4">Useful Links</p>
+              <ul className={styles.footer_ul}>
+                <li className={styles.footer_li}>Home</li>
+                <li className={styles.footer_li}>Blog</li>
+                <li className={styles.footer_li}>Home</li>
+                <li className={styles.footer_li}>Home</li>
+                <li className={styles.footer_li}>Blog</li>
+                <li className={styles.footer_li}>Home</li>
+              </ul>
+            </div>
+            <div className="right-section flex-1 pt-8">
+              <p className="text-sm font-bold text-white pb-4">
+                Subscribe to our newsletter
+              </p>
+              <div className="pr-8">
+                <div className={styles.webflow_style_input}>
+                  <input
+                    // className=""
+                    type="email"
+                    placeholder="Enter your email"
+                  ></input>
+                  <button type="submit">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                  </button>
                 </div>
-                <div className="first_item flex pb-2">
-                  <div className="icon flex justify-center items-center">
-                    <FontAwesomeIcon icon={faFacebook} />
+
+                <div className="contact_details pt-4">
+                  <div className="first_item flex pb-2">
+                    <div className="icon flex justify-center items-center">
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </div>
+                    <div className="text pl-2">
+                      <p className="text-xs text-secondary font-semibold pl-1 pb-0">
+                        {" "}
+                        24/7 Support:
+                      </p>
+                      <p className="text-xs text-secondary font-semibold ">
+                        {" "}
+                        +88017111 38456
+                      </p>
+                    </div>
                   </div>
-                  <div className="text pl-2">
-                    <p className="text-xs text-secondary font-semibold pl-1 pb-0">
-                      {" "}
-                      24/7 Support:
-                    </p>
-                    <p className="text-xs text-secondary font-semibold ">
-                      {" "}
-                      +88017111 38456
-                    </p>
+                  <div className="first_item flex pb-2">
+                    <div className="icon flex justify-center items-center">
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </div>
+                    <div className="text pl-2">
+                      <p className="text-xs text-secondary font-semibold pl-1 pb-0">
+                        {" "}
+                        24/7 Support:
+                      </p>
+                      <p className="text-xs text-secondary font-semibold ">
+                        {" "}
+                        +88017111 38456
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="first_item flex pb-2">
-                  <div className="icon flex justify-center items-center">
-                    <FontAwesomeIcon icon={faFacebook} />
-                  </div>
-                  <div className="text pl-2">
-                    <p className="text-xs text-secondary font-semibold pl-1 pb-0">
-                      {" "}
-                      24/7 Support:
-                    </p>
-                    <p className="text-xs text-secondary font-semibold ">
-                      {" "}
-                      +88017111 38456
-                    </p>
+                  <div className="first_item flex pb-2">
+                    <div className="icon flex justify-center items-center">
+                      <FontAwesomeIcon icon={faFacebook} />
+                    </div>
+                    <div className="text pl-2">
+                      <p className="text-xs text-secondary font-semibold pl-1 pb-0">
+                        {" "}
+                        24/7 Support:
+                      </p>
+                      <p className="text-xs text-secondary font-semibold ">
+                        {" "}
+                        +88017111 38456
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

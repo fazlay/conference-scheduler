@@ -18,7 +18,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       {heroTitle && (
         <h1 className=" text-5xl font-bold font-primary-heading">
           {/* BUTNEXT */}
-          {heroTitle}
+          {heroTitle.toLocaleUpperCase()}
         </h1>
       )}
       {heroSubTitle && (
