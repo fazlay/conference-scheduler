@@ -73,15 +73,6 @@ const BlogSlider = () => {
       <SwiperSlide>
         <SingleBlog />
       </SwiperSlide>
-      <SwiperSlide>
-        <SingleBlog />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SingleBlog />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SingleBlog />
-      </SwiperSlide>
     </Swiper>
   );
 };
