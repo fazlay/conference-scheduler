@@ -21,7 +21,20 @@ const OurServices = () => {
           className={styles.image}
         />
         <div className={styles.overlay}></div>
-        <p className={styles.text}>Hello World</p>
+        <div className={styles.titleText}>
+          <h4 className="text-3xl font-bold font-primary-heading px-4 ">
+            B2B Lead Generation
+          </h4>
+          <p className="px-4 pt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            provident quidem temporibus numquam consectetur aspernatur
+            perferendis consequuntur odit assumenda{" "}
+          </p>
+        </div>
+
+        <p className={styles.text}>
+          More about social media marketing &#10230;
+        </p>
       </div>
       <div className={styles.container}>
         <img
@@ -30,6 +43,20 @@ const OurServices = () => {
           className={styles.image}
         />
         <div className={styles.overlay}></div>
+        <div className={styles.titleText}>
+          <h4 className="text-3xl font-bold font-primary-heading px-4 ">
+            B2B Lead Generation
+          </h4>
+          <p className="px-4 pt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            provident quidem temporibus numquam consectetur aspernatur
+            perferendis consequuntur odit assumenda{" "}
+          </p>
+        </div>
+
+        <p className={styles.text}>
+          More about social media marketing &#10230;
+        </p>
       </div>
       <div className={styles.container}>
         <img
@@ -38,6 +65,20 @@ const OurServices = () => {
           className={styles.image}
         />
         <div className={styles.overlay}></div>
+        <div className={styles.titleText}>
+          <h4 className="text-3xl font-bold font-primary-heading px-4 ">
+            B2B Lead Generation
+          </h4>
+          <p className="px-4 pt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            provident quidem temporibus numquam consectetur aspernatur
+            perferendis consequuntur odit assumenda{" "}
+          </p>
+        </div>
+
+        <p className={styles.text}>
+          More about social media marketing &#10230;
+        </p>
       </div>
     </div>
   );
