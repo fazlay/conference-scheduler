@@ -1,11 +1,10 @@
 import React from "react";
+import HeaderText from "../HeaderText/HeaderText";
 
 const FeaturedCompany = () => {
   return (
-    <div className="py-4 mt-4">
-      <h1 className="text-4xl font-bold font-primary-heading text-center text-heading">
-        Featured
-      </h1>
+    <div className="">
+      <HeaderText text="Featured" className="text-center" />
       <div className=" bg-background-primary py-8  px-4 ">
         <div
           className=" flex justify-evenly company_image_container"

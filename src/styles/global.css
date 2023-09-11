@@ -58,9 +58,25 @@
   padding: 5px 30px;
   text-decoration: none;
   border-radius: 30px;
+  color: black;
   font-size: 12px;
-  color: #000;
   font-weight: 600;
+  background-color: #3498db;
+  border: none; /* Remove the default button border */
+  box-shadow: 
+    0 0 0 3px #ffff, /* Outer border with color #3498db */
+    0 0 0 5px #3498db, /* Inner border with color #ff5733 */
+    0 0 0 12px transparent;  
+}
+.outer-button-transparent {
+  display: inline-block;
+  padding: 5px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  color: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: .3;
   background-color: #3498db;
   border: none; /* Remove the default button border */
   box-shadow: 
@@ -100,6 +116,26 @@
   color: red;
   
 }
+#navbar li{
+  border-bottom: transparent 4px solid;
+}
+#navbar li:hover:nth-child(4) {
+  color: red;
+  border-bottom: transparent 4px solid;
+  transition: all 0.5s ease-out;
+}
+#navbar li:hover:last-child {
+  color: red;
+  border-bottom: transparent 4px solid;
+  transition: all 0.5s ease-out;
+}
+#navbar li:hover{
+  color: red;
+  border-bottom: red 4px solid;
+  transition: all 0.5s ease-out;
+}
+
+
 
 
 

@@ -1,9 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
-// Import Swiper styles
 import "swiper/css";
-
 import "swiper/css/navigation";
 import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -29,20 +26,10 @@ const BlogSlider = () => {
       swiperRef.current.swiper.slideNext();
     }
   };
+
   return (
-    <Swiper
-      ref={swiperRef}
-      spaceBetween={50}
-      navigation={{
-        prevEl: navigationPrevRef.current,
-        nextEl: navigationNextRef.current,
-      }}
-      modules={[Navigation]}
-      slidesPerView={3}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(navigationPrevRef.current)}
-    >
-      <div className="flex z-10 mb-12 py-4 gap-4">
+    <div className="">
+      <div className="flex justify-end pt-4 gap-4 mr-8">
         <div
           ref={navigationPrevRef}
           className="cursor-pointer "
@@ -58,22 +45,35 @@ const BlogSlider = () => {
           <FontAwesomeIcon icon={faChevronRight} />
         </div>
       </div>
-      <SwiperSlide>
-        <SingleBlog />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SingleBlog />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SingleBlog />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SingleBlog />
-      </SwiperSlide>
-      <SwiperSlide>
-        <SingleBlog />
-      </SwiperSlide>
-    </Swiper>
+      <Swiper
+        ref={swiperRef}
+        spaceBetween={50}
+        navigation={{
+          prevEl: navigationPrevRef.current,
+          nextEl: navigationNextRef.current,
+        }}
+        modules={[Navigation]}
+        slidesPerView={3}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(navigationPrevRef.current)}
+      >
+        <SwiperSlide>
+          <SingleBlog />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SingleBlog />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SingleBlog />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SingleBlog />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SingleBlog />
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 };
 

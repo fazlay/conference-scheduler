@@ -9,6 +9,7 @@ import BlogSlider from "@/components/BlogSlider";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import OurServices from "../OurServices";
+import HeaderText from "../HeaderText/HeaderText";
 
 const HomePage = () => {
   useEffect(() => {
@@ -43,14 +44,14 @@ const HomePage = () => {
         <HighlightedSection />
         <OurClients />
         {/* </div> */}
-        <div className="py-8">
-          <h1 className="text-4xl font-bold font-primary-heading text-center text-black mb-4 ">
+
+        <HeaderText text="Our Services" className="text-center pb-2" />
+        {/* <h1 className="text-4xl font-bold font-primary-heading text-center text-black mb-4 ">
             Our Services
-          </h1>
-          <div className="line w-full border-b-4 border-gray-500 pt-12"></div>
-          {/* <div className="container_margin"> */}
-          <OurServices />
-        </div>
+          </h1> */}
+        <div className="line w-full border-b-4 border-gray-500 "></div>
+        {/* <div className="container_margin"> */}
+        <OurServices />
       </div>
 
       <div className="line w-16 border-b-2 border-gray-500 pt-12"></div>
