@@ -13,7 +13,7 @@ const OurServices = () => {
   };
 
   return (
-    <div className="flex flex-row mt-8 ">
+    <div className="flex md:flex-row flex-col mt-8 ">
       <div className={styles.container}>
         <img
           src="/assets/images/home_hero.jpg"

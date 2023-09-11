@@ -23,7 +23,8 @@
 }
 
 .container_margin{
-  margin: 0 5rem;
+  margin: 0.25rem/* 4px */;
+ 
 }
 .container_padding{
   margin: 0 5rem;
@@ -133,6 +134,12 @@
   color: red;
   border-bottom: red 4px solid;
   transition: all 0.5s ease-out;
+}
+
+@media (min-width: 768px) {
+  .container_margin {
+    margin: 0 5rem; /* 80px */
+  }
 }
 
 

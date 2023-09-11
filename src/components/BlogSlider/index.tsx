@@ -56,6 +56,13 @@ const BlogSlider = () => {
         slidesPerView={3}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(navigationPrevRef.current)}
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          320: { slidesPerView: 1 },
+          480: { slidesPerView: 1 },
+          768: { slidesPerView: 1 },
+          1024: { slidesPerView: 3 },
+        }}
       >
         <SwiperSlide>
           <SingleBlog />

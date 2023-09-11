@@ -29,7 +29,7 @@ const HomePage = () => {
         />
         <FeaturedCompany />
       </div>
-      <div className="line w-16 border-b-2 border-gray-500 pt-12"></div>
+      <div className="line w-16 border-b-2 border-gray-500 pt-12 hidden md:block"></div>
       <div className="pb-8 container_margin !-mt-7">
         <h1 className="text-4xl font-bold font-primary-heading text-left text-black ">
           How We Can Help You
@@ -46,23 +46,21 @@ const HomePage = () => {
         {/* </div> */}
 
         <HeaderText text="Our Services" className="text-center pb-2" />
-        {/* <h1 className="text-4xl font-bold font-primary-heading text-center text-black mb-4 ">
-            Our Services
-          </h1> */}
+
         <div className="line w-full border-b-4 border-gray-500 "></div>
-        {/* <div className="container_margin"> */}
+
         <OurServices />
       </div>
 
-      <div className="line w-16 border-b-2 border-gray-500 pt-12"></div>
-      <div className="pb-8 container_margin !-mt-7">
+      <div className="line w-16 border-b-2 border-gray-500 pt-12 md:block hidden"></div>
+      <div className="pb-8 container_margin md:!-mt-7 ">
         <h1 className="text-4xl font-bold font-primary-heading text-left text-black ">
           Why To Choose Us
         </h1>
       </div>
 
       <div className="py-8">
-        <div className="container_margin flex flex-row gap-x-16">
+        <div className="container_margin flex md:flex-row flex-col gap-x-16">
           <ChooseUsCard />
           <ChooseUsCard />
           <ChooseUsCard />
@@ -79,7 +77,7 @@ const HomePage = () => {
       </div>
 
       <div className="py-8">
-        <div className="line w-16 border-b-2 border-gray-500 pt-12"></div>
+        <div className="line w-16 border-b-2 border-gray-500 pt-12 md:block hidden"></div>
         <div className="pb-8 container_margin !-mt-4">
           <p className="text-2xl font-bold font-primary-heading text-left text-black ">
             BLOG

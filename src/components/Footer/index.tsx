@@ -24,15 +24,15 @@ const Footer = () => {
       </div>
       <div className="bg-background-footer text-secondary">
         <div className="div container_margin">
-          <div className=" flex w-full  gap-16">
-            <div className="left-section flex-2 w-1/2">
+          <div className=" flex px-2 flex-col md:flex-row w-full  md:gap-16">
+            <div className="left-section  md:flex-2 md:w-1/2 w-full">
               <div className="brand-icon p-2 mt-4">
                 <FontAwesomeIcon
                   icon={faFacebook}
                   style={{ color: "#1860dc" }}
                 />
               </div>
-              <p className="text-xs text-slate">
+              <p className="text-xs text-slate-50">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
                 iure earum omnis deserunt fugit cum rem nostrum? Blanditiis,
                 quam ullam. Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -74,7 +74,7 @@ const Footer = () => {
               <p className="text-sm font-bold text-white pb-4">
                 Subscribe to our newsletter
               </p>
-              <div className="pr-8">
+              <div className="pr-8 flex flex-col  content-start flex-wrap">
                 <div className={styles.webflow_style_input}>
                   <input
                     // className=""

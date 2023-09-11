@@ -7,7 +7,7 @@ const FeaturedCompany = () => {
       <HeaderText text="Featured" className="text-center" />
       <div className=" bg-background-primary py-8  px-4 ">
         <div
-          className=" flex justify-evenly company_image_container"
+          className=" flex md:flex-row flex-col md:justify-evenly gap-4 items-center company_image_container"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
