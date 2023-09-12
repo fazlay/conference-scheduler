@@ -133,10 +133,12 @@ const ContactForm = () => {
                   </label>
                 </div>
               </div>
-              <div className="submit flex justify-center items-center bg-blue-950 w-full py-1.5 mt-4 text-secondary hover:bg-blue-900">
-                SUBMIT
-              </div>
-              <input type="submit" value="Send" />
+
+              <input
+                type="submit"
+                value="SUBMIT"
+                className="submit flex justify-center items-center bg-blue-950 w-full py-1.5 mt-4 text-secondary hover:bg-blue-900"
+              />
             </div>
           </div>
         </form>

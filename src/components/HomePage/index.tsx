@@ -10,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import OurServices from "../OurServices";
 import HeaderText from "../HeaderText/HeaderText";
+import { whyToChooseUsArray } from "@/constants/homePage.constants";
 
 const HomePage = () => {
   useEffect(() => {
@@ -29,48 +30,48 @@ const HomePage = () => {
         />
         <FeaturedCompany />
       </div>
-      <div className="line w-16 border-b-2 border-gray-500 pt-12 hidden md:block"></div>
-      <div className="pb-8 container_margin !-mt-7">
-        <h1 className="text-4xl font-bold font-primary-heading text-left text-black ">
-          How We Can Help You
-        </h1>
-        <p className="text-black">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+      <div className="line w-16 border-b-2 border-gray-500 mt-32 hidden md:block"></div>
+      <div className="pb-8 container_margin !-mt-20">
+        <HeaderText
+          text="How We Can Help You"
+          titleClassName="text-left"
+          className="pb-6"
+          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
           atque explicabo ea et modi tempore laborum facere corrupti eaque
-          aliquid.
-        </p>
+          aliquid."
+        />
       </div>
       <div className="container_margin">
         <HighlightedSection />
         <OurClients />
-        {/* </div> */}
-
         <HeaderText text="Our Services" className="text-center pb-2" />
-
         <div className="line w-full border-b-4 border-gray-500 "></div>
-
         <OurServices />
       </div>
 
-      <div className="line w-16 border-b-2 border-gray-500 pt-12 md:block hidden"></div>
-      <div className="pb-8 container_margin md:!-mt-7 ">
-        <h1 className="text-4xl font-bold font-primary-heading text-left text-black ">
-          Why To Choose Us
-        </h1>
+      <div className="line w-16 border-b-2 border-gray-500 pt-[4.5rem] md:block hidden"></div>
+      <div className="pb-8 container_margin md:!-mt-20 ">
+        <HeaderText
+          text="Why To Choose Us"
+          titleClassName="text-left"
+          className="pb-0"
+        />
       </div>
 
       <div className="py-8">
         <div className="container_margin flex md:flex-row flex-col gap-x-16">
-          <ChooseUsCard />
-          <ChooseUsCard />
-          <ChooseUsCard />
+          {whyToChooseUsArray.map((item) => (
+            <ChooseUsCard iconUrl={item.iconUrl} />
+          ))}
         </div>
       </div>
 
       <div className="py-8">
-        <h1 className="text-4xl font-bold font-primary-heading text-center text-black mb-4 ">
-          Our Featured Reviews
-        </h1>
+        <HeaderText
+          text="Our Featured Reviews"
+          titleClassName="text-center "
+          className="pb-6"
+        />
         <div className="container_margin">
           <Slider />
         </div>
@@ -78,13 +79,15 @@ const HomePage = () => {
 
       <div className="py-8">
         <div className="line w-16 border-b-2 border-gray-500 pt-12 md:block hidden"></div>
-        <div className="pb-8 container_margin !-mt-4">
-          <p className="text-2xl font-bold font-primary-heading text-left text-black ">
-            BLOG
-          </p>
-          <h1 className="text-4xl font-bold font-primary-heading text-center text-black mb-4 ">
-            Learning Center
-          </h1>
+        <div className="pb-8 container_margin !-mt-5">
+          <p className="text-2xl font-bold text-left text-black ">BLOG</p>
+
+          <HeaderText
+            text="Learning Center"
+            titleClassName="text-left "
+            className="pb-0 pt-4"
+          />
+
           <BlogSlider />
         </div>
       </div>

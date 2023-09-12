@@ -29,7 +29,7 @@ const BlogSlider = () => {
 
   return (
     <div className="">
-      <div className="flex justify-end pt-4 gap-4 mr-8">
+      <div className="flex justify-end gap-4 mr-8">
         <div
           ref={navigationPrevRef}
           className="cursor-pointer "

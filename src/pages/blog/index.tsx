@@ -7,7 +7,7 @@ import React, { ReactNode } from "react";
 const BlogListPage = () => {
   return (
     <div className="container_margin">
-      <HeaderText text="The ButNext Blog" className={"text-center py-0"} />
+      <HeaderText text="The ButNext Blog" className={"text-center !pb-0"} />
 
       <p className="font-bold text-sm text-center">
         Our official blog with news, technology advice,
@@ -17,8 +17,8 @@ const BlogListPage = () => {
       </p>
       <HighlightedSection />
 
-      {[1, 2, 3, 4, 5].map((item) => (
-        <BlogCard />
+      {[1, 2, 3, 4, 5].map((item, index) => (
+        <BlogCard index={index} />
       ))}
     </div>
   );

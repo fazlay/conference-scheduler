@@ -1,7 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
-// Import Swiper styles
 import "swiper/css";
 import HighlightedSection from "../HighlightedSection";
 import "swiper/css/navigation";
@@ -11,6 +9,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import SliderCard from "./SliderCard";
 
 const Slider = () => {
   const swiperRef = useRef(null);
@@ -42,22 +41,22 @@ const Slider = () => {
       onSwiper={(swiper) => console.log(navigationPrevRef.current)}
     >
       <SwiperSlide>
-        <HighlightedSection />
+        <SliderCard />
       </SwiperSlide>
       <SwiperSlide>
-        <HighlightedSection />
+        <SliderCard />
       </SwiperSlide>
       <SwiperSlide>
-        <HighlightedSection />
+        <SliderCard />
       </SwiperSlide>
       <SwiperSlide>
-        <HighlightedSection />
+        <SliderCard />
       </SwiperSlide>
       <SwiperSlide>
-        <HighlightedSection />
+        <SliderCard />
       </SwiperSlide>
       <SwiperSlide>
-        <HighlightedSection />
+        <SliderCard />
       </SwiperSlide>
       <div className="flex justify-center py-4 gap-4">
         <div
