@@ -6,6 +6,7 @@ import StatementMessage from "@/components/Statement";
 import ItemCard from "@/components/ItemCard";
 import Slider from "@/components/Slider";
 import BaseLayout from "@/layout/BaseLayout";
+import { aboutUsArray } from "@/constants/data.constants";
 
 const AboutUs = () => {
   return (
@@ -17,9 +18,9 @@ const AboutUs = () => {
       <StatementMessage />
 
       <div className="py-12 flex gap-16 ">
-        {[1, 2, 3].map((item) => (
+        {aboutUsArray.map((item) => (
           <ItemCard
-            cardIcon={"/assets/images/on_Time_Delivery.png"}
+            cardIcon={item.iconUrl}
             cardTitle={"Lead-to-Revenue Focus"}
             cardDescription={
               "Lorem 20 years of experience in B2B lead generation, we know what it takes to drive revenue for your business. We focus on the metrics that matter most to your bottom line, including opportunities and revenue generated."

@@ -110,7 +110,7 @@ const TopNavigation = () => {
                 viewBox="0 0 17 14"
               >
                 <path
-                  // stroke="currentColor"
+                  stroke="currentColor"
                   // stroke-linecap="round"
                   // stroke-linejoin="round"
                   // stroke-width="2"

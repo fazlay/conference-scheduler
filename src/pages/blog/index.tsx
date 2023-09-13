@@ -15,10 +15,10 @@ const BlogListPage = () => {
       <p className="font-bold text-sm text-center pb-6 ">
         and business culture
       </p>
-      <HighlightedSection />
+      <HighlightedSection index={1} />
 
-      {[1, 2, 3, 4, 5].map((item, index) => (
-        <BlogCard index={index} />
+      {[1, 2, 3, 4, 5].map((item) => (
+        <BlogCard />
       ))}
     </div>
   );

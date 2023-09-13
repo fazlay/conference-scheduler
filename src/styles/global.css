@@ -122,6 +122,8 @@
   
 }
 #navbar li{
+  padding-left: 1rem;
+  padding-right: 1rem;
   border-bottom: transparent 4px solid;
 }
 #navbar li:hover:nth-child(4) {
@@ -133,6 +135,10 @@
   color: red;
   border-bottom: transparent 4px solid;
   transition: all 0.5s ease-out;
+
+}
+#navbar li:last-child {
+  padding-right: 0rem;
 }
 #navbar li:hover{
   color: red;

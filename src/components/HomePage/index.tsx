@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { use, useEffect, useRef } from "react";
 import HeroSection from "../HeroSection";
 import FeaturedCompany from "./FeaturedCompany";
 import HighlightedSection from "../HighlightedSection";
@@ -10,7 +10,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import OurServices from "../OurServices";
 import HeaderText from "../HeaderText/HeaderText";
-import { whyToChooseUsArray } from "@/constants/homePage.constants";
+import { whyToChooseUsArray } from "@/constants/data.constants";
+import { useScroll, useTransform } from "framer-motion";
 
 const HomePage = () => {
   useEffect(() => {
