@@ -3,7 +3,7 @@ import HeaderText from "../HeaderText/HeaderText";
 
 const FeaturedCompany = () => {
   return (
-    <div className="">
+    <div className=" bg-white mt-8">
       <HeaderText text="Featured" className="text-center" />
       <div className=" bg-background-primary py-8  px-4 ">
         <div

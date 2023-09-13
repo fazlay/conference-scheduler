@@ -3,7 +3,7 @@ import React from "react";
 const TopNavigation = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <nav className=" fixed w-full z-20 top-0 left-0">
+    <nav className=" fixed w-full z-20 top-0 left-0 z-1">
       <div className="container_margin hidden md:block bg-white">
         <div className="max-w-screen-xl  mx-auto p-4">
           <div className="" id="navbar-sticky">

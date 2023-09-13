@@ -9,19 +9,21 @@ const Testimonial = () => {
   return (
     <div className="container_margin">
       <HeroSection heroTitle="Words of Trust" />
-      <HeaderText
-        text="Clients Share Their Working Experience With Us"
-        className={"text-center"}
-      />
-      <HighlightedSection />
-      <HeaderText
-        text="Discover the Voice of Our Satisfied Clients"
-        className="text-center"
-      />
-      <div className="flex flex-col md:flex-row md:gap-6">
-        {[1, 2, 3].map((item) => (
-          <VideoCard />
-        ))}
+      <div className="bg-white">
+        <HeaderText
+          text="Clients Share Their Working Experience With Us"
+          className={"text-center"}
+        />
+        <HighlightedSection />
+        <HeaderText
+          text="Discover the Voice of Our Satisfied Clients"
+          className="text-center"
+        />
+        <div className="flex flex-col md:flex-row md:gap-6">
+          {[1, 2, 3].map((item, index) => (
+            <VideoCard key={index} />
+          ))}
+        </div>
       </div>
     </div>
   );

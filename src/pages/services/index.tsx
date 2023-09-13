@@ -9,11 +9,14 @@ const Services = () => {
   return (
     <div className="container_margin">
       <HeroSection heroTitle="Services" />
-      <HeaderText text="Explore Our Services" className={"text-center"} />
 
-      <HighlightedSection />
-      <HighlightedSection />
-      <HighlightedSection />
+      <div className="bg-white">
+        <HeaderText text="Explore Our Services" className={"text-center"} />
+
+        <HighlightedSection />
+        <HighlightedSection />
+        <HighlightedSection />
+      </div>
     </div>
   );
 };

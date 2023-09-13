@@ -31,16 +31,18 @@ const HomePage = () => {
         />
         <FeaturedCompany />
       </div>
-      <div className="line w-16 border-b-2 border-gray-500 mt-32 hidden md:block"></div>
-      <div className="pb-8 container_margin !-mt-20">
-        <HeaderText
-          text="How We Can Help You"
-          titleClassName="text-left"
-          className="pb-6"
-          subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+      <div className="bg-white">
+        <div className="line w-16 border-b-2 border-gray-500 pt-32 hidden md:block"></div>
+        <div className="pb-8 container_margin !-mt-20">
+          <HeaderText
+            text="How We Can Help You"
+            titleClassName="text-left"
+            className="pb-6"
+            subTitle="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
           atque explicabo ea et modi tempore laborum facere corrupti eaque
           aliquid."
-        />
+          />
+        </div>
       </div>
       <div className="container_margin">
         <HighlightedSection />
