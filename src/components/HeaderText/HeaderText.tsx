@@ -7,7 +7,7 @@ interface HeaderTextProps {
 }
 
 const HeaderText: React.FC<HeaderTextProps> = ({
-  className,
+  className = "",
   titleClassName = "text-center",
   text,
   subTitle = false,

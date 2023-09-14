@@ -46,6 +46,7 @@ const HomePage = () => {
       </div>
       <div className="container_margin">
         <HighlightedSection />
+
         <OurClients />
         <HeaderText text="Our Services" className="text-center pb-2" />
         <div className="line w-full border-b-4 border-gray-500 "></div>

@@ -4,7 +4,7 @@ const OurValues = () => {
   return (
     <div className="bg-black py-12 pl-8 my-12">
       <div className="flex ">
-        <p className="text-secondary font-bold leading-loose text-xl">
+        <p className="text-secondary font-bold font-special-heading leading-loose text-xl">
           {" "}
           OUR VALUES
         </p>

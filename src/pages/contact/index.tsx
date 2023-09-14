@@ -3,12 +3,14 @@ import BaseLayout from "@/layout/BaseLayout";
 import React, { ReactNode, useRef } from "react";
 
 import emailjs from "@emailjs/browser";
+import Inquires from "./Inquires";
+import Slider from "@/components/Slider";
 
 const ContactForm = () => {
   const PUBLIC_KEY = "miIaHUpcyP6BA38Gc";
   const SERVICE_ID = "service_74o9si8";
   const TEMPLATE_ID = "template_lhnu2g7";
-  const form = useRef();
+  const form = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -143,6 +145,9 @@ const ContactForm = () => {
           </div>
         </form>
       </div>
+      <Inquires />
+      <HeaderText text="Our Featured Reviews" className="text-center" />
+      <Slider />
     </>
   );
 };

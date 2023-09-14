@@ -11,6 +11,10 @@
   margin-bottom: 5px; /* Optional: Add some spacing between list items */
 }
 
+.footer_li:hover {
+  color: var(--blue);
+}
+
 .footer_li::before {
   content: '\027A4'; /* Font Awesome icon code for a home icon */
   font-weight: 900;

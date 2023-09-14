@@ -12,17 +12,14 @@ const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 const HighlightedSection: React.FC<HighlightedSectionProps> = ({
   index = 1,
 }) => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  //   AOS.refresh();
+  // }, []);
   return (
     <section>
-      <div className="inner-container h-96 my-6 md:flex border-4  pr-2 text-black bg-slate-200">
+      <div className="inner-container min-h-96 my-6 block md:flex border-4  pr-2 text-black bg-slate-200">
         <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
           className={`left-section flex flex-col justify-between md:w-1/2 pr-4 md:order-${
             index % 2 == 0 ? 2 : 1
           }`}

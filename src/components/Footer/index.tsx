@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import styles from "./footer.module.css";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { StyledButton } from "@/button/Button";
 
 const Footer = () => {
   return (
@@ -17,7 +18,8 @@ const Footer = () => {
               Let's Make Your Business Profitable!
             </h3>
             <div>
-              <button className="outer-button mt-4 mr-6">Contact</button>
+              <StyledButton> Contact </StyledButton>
+              {/* <button className="outer-button mt-4 mr-6">Contact</button> */}
             </div>
           </div>
         </div>
@@ -62,12 +64,24 @@ const Footer = () => {
             <div className="middle-section flx-1 pt-8">
               <p className="text-sm font-bold text-white pb-4">Useful Links</p>
               <ul className={styles.footer_ul}>
-                <li className={styles.footer_li}>Home</li>
-                <li className={styles.footer_li}>Blog</li>
-                <li className={styles.footer_li}>Home</li>
-                <li className={styles.footer_li}>Home</li>
-                <li className={styles.footer_li}>Blog</li>
-                <li className={styles.footer_li}>Home</li>
+                <li className={styles.footer_li}>
+                  <a href="/">Home</a>
+                </li>
+                <li className={styles.footer_li}>
+                  <a href="/about-us">About Us</a>
+                </li>
+                <li className={styles.footer_li}>
+                  <a href="/services">Services</a>
+                </li>
+                <li className={styles.footer_li}>
+                  <a href="/testimonial">testimonial</a>
+                </li>
+                <li className={styles.footer_li}>
+                  <a href="/contact">Contact</a>
+                </li>
+                <li className={styles.footer_li}>
+                  <a href="/blog">Blog</a>
+                </li>
               </ul>
             </div>
             <div className="right-section flex-1 pt-8">

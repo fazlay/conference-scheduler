@@ -1,7 +1,9 @@
+import { StyledButton } from "@/button/Button";
 import React from "react";
 
 const TopNavigation = () => {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [navbarOpen, setNavbarOpen] = React.useState(true);
+
   return (
     <nav className=" fixed w-full z-20 top-0 left-0 z-1">
       <div className="container_margin hidden md:block bg-white">
@@ -66,14 +68,15 @@ const TopNavigation = () => {
                   href="/contact"
                   className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
                 >
-                  <div className="relative">
+                  <StyledButton animate>Contact</StyledButton>
+                  {/* <div className="relative">
                     <button className="outer-button  mr-6 text-black">
                       Contact
                     </button>
                     <button className=" animate-ping outer-button-transparent bg-blue  mr-6 absolute top-0 left-0 text-transparent">
                       Contact
                     </button>
-                  </div>
+                  </div> */}
                 </a>
               </li>
             </ul>

@@ -6,6 +6,7 @@ module.exports = {
       serif: ["ui-serif", "Georgia"],
       mono: ["ui-monospace", "SFMono-Regular"],
       "primary-heading": ["Butler", "sans-serif"],
+      "special-heading": ["Bebas Neue", "sans-serif"],
     },
     fontSize: {
       xs: "0.75rem",
