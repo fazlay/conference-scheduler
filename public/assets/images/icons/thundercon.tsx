@@ -1,6 +1,12 @@
 import React from "react";
 
-const ThunderIcon = ({ width, height, color }) => {
+interface ThunderIconProps {
+  width?: number;
+  height?: number;
+  color?: string;
+}
+
+const ThunderIcon: React.FC<ThunderIconProps> = ({ width, height, color }) => {
   return (
     <svg
       width={width}
