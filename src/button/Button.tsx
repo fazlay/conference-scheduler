@@ -1,25 +1,23 @@
 type IButtonProps = {
-  btnClass?: string;
   children: string;
-  animate?: boolean;
+  id: string;
+  setActiveTab: any;
 };
 
-import styles from "./button.module.css";
-
 const StyledButton = (props: IButtonProps) => {
-  const { btnClass, animate = false } = props;
+  const { children, id, setActiveTab } = props;
   return (
-    <div className={`relative ${btnClass}`}>
-      <button className={`mr-6 text-black ${styles.outer_button}`}>
-        {props.children}
-      </button>
-      <button
-        className={`${animate ? `animate-ping` : ""} ${
-          styles.outer_button_transparent
-        } bg-blue  mr-6 absolute top-0 left-0 text-transparent`}
-      >
-        Contact
-      </button>
+    <div
+      onClick={() => {
+        console.log("Button Click", id);
+        setActiveTab(id);
+      }}
+      className=" cursor-pointer text-white mb-2 py-2 w-full font-bold border-2 hover:border-transparent bg-white hover:bg-yellow-primary rounded-xl mx-8"
+    >
+      <div className=" text-yellow text-4xl ml-2 py-2 px-4 inline-block bg-white rounded-lg">
+        &#8645;
+      </div>{" "}
+      {children}
     </div>
   );
 };

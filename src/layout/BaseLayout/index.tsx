@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import TopNavigation from "@/components/NavBar";
-import TopNoticeBar from "@/components/TopNoticeBar";
 
 const BaseLayout: React.FC<
   React.PropsWithChildren & { className?: string }
