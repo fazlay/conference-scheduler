@@ -1,15 +1,18 @@
 import React from "react";
 
 interface EventDetailsCardProps {
-  titleText: string;
+  data: {};
 }
 
-const EventDetailsCard: React.FC<EventDetailsCardProps> = ({ titleText }) => {
+const EventDetailsCard: React.FC<EventDetailsCardProps> = ({ data }) => {
   return (
     <div className="flex flex-row bg-white my-2 mx-4 rounded-md">
       <img src="/assets/images/conf/image_1.png" alt="hero" />
       <div>
-        <p className="font-bold">{titleText}</p>
+        {data?.name ? <p className="font-bold">{data?.name}</p> : null}
+        {data?.firstName ? (
+          <p className="font-bold">{data?.firstName}</p>
+        ) : null}
         <p className="font-light">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>

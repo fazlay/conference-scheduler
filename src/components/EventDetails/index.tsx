@@ -11,7 +11,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({ dataArray }) => {
     <div>
       {" "}
       <div className="left_container bg-slate-300 w-3/4">
-        {dataArray?.map(() => <EventDetailsCard titleText={`first Card `} />)}
+        {dataArray?.map((item) => <EventDetailsCard data={item} />)}
       </div>
     </div>
   );

@@ -6,10 +6,6 @@ import { gql, useQuery } from "@apollo/client";
 import BaseLayout from "@/layout/BaseLayout";
 import EventDetails from "@/components/EventDetails";
 
-// organizers: GET_ORGANIZERS,
-// speakers: GET_SPEKARS,
-// schedules: GET_SHEDULES,
-// sponsors: GET_SPONSORS,
 const selectedTab = [
   {
     id: "organizers",
